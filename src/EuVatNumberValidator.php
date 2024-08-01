@@ -19,7 +19,7 @@ class EuVatNumberValidator
 
     private static function getRuleForCountry(string $countryCode): string
     {
-        $rule = config('vat_number_validator.rules.' . $countryCode);
+        $rule = config('eu-vat-number-validator.rules.' . $countryCode);
         if (empty($rule)) {
             throw new InvalidRuleForCountryCodeException($countryCode);
         }
