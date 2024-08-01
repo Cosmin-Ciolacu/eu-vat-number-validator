@@ -2,6 +2,8 @@
 
 namespace CosminCiolacu\EuVatNumberValidator;
 
+use CosminCiolacu\EuVatNumberValidator\Exceptions\InvalidRuleForCountryCodeException;
+
 class EuVatNumberValidator
 {
     public static function validate(string $vatNumber): bool
