@@ -1,0 +1,41 @@
+{
+    "name": "cosmin-ciolacu/eu-vat-number-validator",
+    "description": "An simple validator for EU vat numbers with validation rule for requests",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cosmnin Ciolacu",
+            "email": "cosminnciolacu99@gmail.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/cosmin-ciolacu/eu-vat-number-validator",
+    "keywords": ["Laravel", "EuVatNumberValidator"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "CosminCiolacu\\EuVatNumberValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CosminCiolacu\\EuVatNumberValidator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CosminCiolacu\\EuVatNumberValidator\\EuVatNumberValidatorServiceProvider"
+            ],
+            "aliases": {
+                "EuVatNumberValidator": "CosminCiolacu\\EuVatNumberValidator\\Facades\\EuVatNumberValidator"
+            }
+        }
+    }
+}
