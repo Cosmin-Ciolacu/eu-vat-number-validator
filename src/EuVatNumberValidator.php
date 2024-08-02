@@ -13,7 +13,8 @@ class EuVatNumberValidator
             $rule = self::getRuleForCountry($countryCode);
             return preg_match($rule, $vatNumber) === 1;
         } catch (InvalidRuleForCountryCodeException $e) {
-            return false;
+            $rule = config('eu-vat-number-validator.generic_rule');
+            return preg_match($rule, $vatNumber) === 1;
         }
     }
 

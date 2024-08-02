@@ -29,5 +29,6 @@ return [
         'SI' => '/^(?:SI)?\d{8}$/',                      // Slovenia
         'ES' => '/^(?:ES)?[A-Z]\d{7}[A-Z]$/',            // Spain
         'SE' => '/^(?:SE)?\d{12}$/'                      // Sweden
-    ]
+    ],
+    'generic_rule' => '/^\d{8,15}$/'
 ];
